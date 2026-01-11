@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+
+header input {
+  padding: 8px;
+  width: 200px;
+}
+
+.cart {
+  font-size: 20px;
+}
+
+.filters {
+  text-align: center;
+  margin: 15px;
+}
+
+.filters button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 8px;
+  background: green;
+  color: white;
+  border: none;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.modal img {
+  width: 100%;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
